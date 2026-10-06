@@ -1,17 +1,17 @@
 export const site = {
   name: "Mann Mittal",
   role: "DevOps Engineer",
-  location: "Bhopal, Madhya Pradesh",
+  location: "Bhopal, India",
   phone: "+91 7489715507",
-  email: "mannmittal622@gmail.com",
+  email: "workwithmann14@gmail.com",
   linkedin: "https://linkedin.com/in/mann-mittal-b11148243",
   github: "https://github.com/Mann14",
-  resume: "/Mann_Mittal_Resume.pdf",
+  resume: "/portfolio/Mann_Mittal_DevOps.pdf",
   availability: "Open to DevOps & platform engineering roles",
   headline:
     "I ship reliable cloud platforms — Terraform, Kubernetes, and GitOps that keep production up while teams move fast.",
   summary:
-    "DevOps engineer with 2 years of hands-on experience automating cloud infrastructure, CI/CD pipelines, and containerized deployments on AWS and GCP. I design zero-downtime releases (blue-green, canary), GitOps workflows with ArgoCD, and observability with Prometheus and Grafana. A full-stack background in React, Next.js, and Node.js means I own delivery from commit to cluster.",
+    "DevOps Engineer with hands-on experience automating cloud infrastructure, CI/CD pipelines, and containerized deployments across AWS and GCP. I work daily with Terraform, Docker, Kubernetes, Ansible, Helm, ArgoCD, Argo Rollouts, GitHub Actions, GitLab CI, Prometheus, and Grafana — from production AI platforms and zero-downtime releases to infrastructure automation, troubleshooting, and migrating containerized workloads toward Kubernetes.",
 };
 
 export const stats = [
@@ -24,63 +24,92 @@ export const stats = [
 export const skillGroups = [
   {
     title: "Cloud",
-    items: ["AWS (EC2, S3, VPC, IAM, CloudWatch)", "GCP (GKE, Compute Engine, Cloud Storage)"],
+    items: [
+      "AWS: EC2, ECS, EKS, Fargate",
+      "AWS: S3, RDS/Aurora, IAM, VPC, CloudWatch",
+      "AWS networking: NAT GW, IGW, Route Tables, Security Groups",
+      "GCP: GKE, Compute Engine, Cloud Storage",
+    ],
+  },
+  {
+    title: "Infrastructure as Code",
+    items: ["Terraform", "Terraform Cloud", "Ansible"],
   },
   {
     title: "Platform & GitOps",
     items: [
       "Kubernetes",
       "Docker / Docker Swarm",
-      "Terraform",
-      "Ansible",
       "Helm",
       "ArgoCD",
       "Argo Rollouts",
+      "KEDA",
+      "GitOps",
+      "Blue-green & canary",
     ],
   },
   {
     title: "CI/CD",
-    items: ["GitHub Actions", "GitLab CI", "Jenkins"],
+    items: ["GitHub Actions", "GitLab CI", "Jenkins", "Pipeline design"],
   },
   {
-    title: "Observability & Scale",
-    items: ["Prometheus", "Grafana", "Datadog", "KEDA"],
+    title: "Observability",
+    items: ["Prometheus", "Grafana", "Datadog", "Alertmanager"],
   },
   {
     title: "Networking & Security",
-    items: ["IAM", "Security Groups", "NAT", "SSL/TLS", "HTTPS", "Istio"],
+    items: ["IAM", "Security Groups", "VPC networking", "NAT", "SSL/TLS", "HTTPS", "Istio"],
   },
   {
     title: "Full stack",
     items: ["React.js", "Next.js", "Node.js", "Express.js", "MongoDB", "Flask"],
   },
   {
-    title: "Languages",
-    items: ["Python", "JavaScript", "Bash", "C", "C++"],
+    title: "Languages & Tools",
+    items: ["Python", "Bash/Shell", "JavaScript", "TypeScript", "C", "C++", "SQL", "Linux", "Git"],
   },
 ];
 
 export const experience = {
   company: "ReventLabs",
-  location: "Indore, Madhya Pradesh",
+  location: "Indore, India",
   role: "DevOps Engineer",
   period: "Jan 2025 – Present",
-  mode: "On-site",
+  mode: "Full-time",
   bullets: [
-    "Designed and maintained CI/CD pipelines with GitHub Actions, targeting zero-downtime production releases.",
-    "Automated infrastructure on AWS and GCP with Terraform, cutting manual configuration and deployment errors.",
-    "Containerized applications with Docker and orchestrated them on Kubernetes for scale and reliability.",
-    "Implemented monitoring and alerting with Prometheus and Grafana for cluster health and system performance.",
+    "Manage deployment and operations of a conversational AI platform on AWS across Kubernetes clusters and Docker Swarm workloads running on EC2.",
+    "Contributed to the migration from AWS ECS toward Kubernetes to improve cost efficiency and infrastructure portability.",
+    "Automate Docker Swarm deployments with Ansible and Kubernetes deployments with ArgoCD canary strategies for zero-downtime releases.",
+    "Write and maintain CI/CD pipelines for application delivery, release automation, and deployment workflows across containerized workloads.",
+    "Monitor workloads with Prometheus and Grafana and investigate resource-utilization and production issues.",
+    "Drive migration from AMD-based Kubernetes nodes toward ARM by identifying incompatible AI/NLU model versions with the NLU team.",
   ],
 };
+
+export const earlierRoles = [
+  {
+    company: "8Bit Warrior",
+    location: "Bhopal, Madhya Pradesh",
+    role: "Software Engineer Intern",
+    period: "Aug 2024 – Dec 2024",
+    note: "DevOps & cloud engineering — maintained GitHub Actions CI/CD pipelines, containerized apps with Docker, and automated tasks with Linux, Git, AWS, and Bash.",
+  },
+  {
+    company: "Brand Smashers Pvt. Ltd.",
+    location: "Bhopal, Madhya Pradesh",
+    role: "Software Developer Intern",
+    period: "May 2024 – Jul 2024",
+    note: "Software development & AI — shipped Python, C++, JavaScript, React, and Next.js code, documented processes, and worked on AI model training and prompt engineering.",
+  },
+];
 
 export const caseStudies = [
   {
     id: "conversational-ai",
-    kicker: "Client · Production platform",
+    kicker: "ReventLabs · Production platform",
     title: "Conversational AI application",
-    period: "Mar 2026 – Present",
-    outcome: "Leading Swarm → Kubernetes migration with canary GitOps releases.",
+    period: "Jan 2025 – Present",
+    outcome: "Kubernetes + Docker Swarm on EC2, with Ansible and ArgoCD canary releases.",
     tech: [
       "Terraform",
       "AWS",
@@ -93,17 +122,18 @@ export const caseStudies = [
       "ArgoCD",
     ],
     points: [
-      "Own deployment of a conversational AI platform on AWS across Kubernetes clusters and Docker Swarm on EC2.",
-      "Leading the migration from Docker Swarm to Kubernetes without pausing delivery.",
-      "Ansible for Swarm automation; ArgoCD canary strategy on Kubernetes for zero-downtime releases.",
+      "Deploy and operate the platform on AWS across Kubernetes clusters and Docker Swarm workloads on EC2; worked with ECS in the initial phase before migrating toward Kubernetes for cost and portability.",
+      "Ansible automates Swarm releases; ArgoCD drives canary deployments on Kubernetes for zero-downtime delivery.",
+      "Own CI/CD pipelines, Docker image management, production troubleshooting, and Prometheus/Grafana monitoring.",
+      "Leading the AMD-to-ARM node migration by flagging incompatible AI/NLU model versions with the NLU team.",
     ],
   },
   {
     id: "ai-platform",
-    kicker: "Client · Reliability & cost",
+    kicker: "ReventLabs · Reliability & cost",
     title: "AI platform enhancement",
-    period: "Jan 2025 – Feb 2026",
-    outcome: "GitOps + blue-green rollouts, PDBs, and tighter CI on GCP.",
+    period: "Jan 2025 – Present",
+    outcome: "GitOps + blue-green rollouts, PDBs, and Terraform on GCP.",
     tech: [
       "Terraform",
       "GCP",
@@ -116,9 +146,10 @@ export const caseStudies = [
       "Argo Rollouts",
     ],
     points: [
-      "Hardened an existing AI platform with Kubernetes Pod Disruption Budgets and cost-optimization work.",
-      "Built a custom GitHub Actions workflow to streamline CI/CD.",
-      "Integrated ArgoCD for GitOps and Argo Rollouts blue-green for zero-downtime releases.",
+      "Implemented Kubernetes Pod Disruption Budgets, cost-optimization measures, and infrastructure improvements.",
+      "Provisioned and managed GCP infrastructure with Terraform and automated delivery through custom GitHub Actions pipelines.",
+      "ArgoCD for GitOps service management and Argo Rollouts blue-green strategy for zero-downtime releases.",
+      "Managed Helm-based Kubernetes workloads, application configuration, Docker images, and cross-cluster troubleshooting.",
     ],
   },
 ];
@@ -147,7 +178,6 @@ export const education = {
 
 export const certifications = [
   "AWS Academy Cloud Foundations — AWS Academy (Apr 2024 – May 2024)",
-  "C / C++ / Python Programming — Sharma Coding Academy (Aug 2022 – Apr 2023)",
 ];
 
 export const achievements = [

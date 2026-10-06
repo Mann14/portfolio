@@ -1,4 +1,4 @@
-import { caseStudies, experience } from "@/data/site";
+import { caseStudies, earlierRoles, experience } from "@/data/site";
 
 export function Work() {
   return (
@@ -63,6 +63,25 @@ export function Work() {
             </div>
           </article>
         ))}
+      </div>
+
+      <div className="mt-10 rounded-2xl border border-line bg-bg p-6 sm:p-8">
+        <h3 className="font-mono text-xs tracking-[0.2em] text-accent uppercase">
+          Earlier experience
+        </h3>
+        <ul className="mt-5 divide-y divide-line">
+          {earlierRoles.map((role) => (
+            <li key={role.company} className="flex flex-col gap-1 py-4 first:pt-0 last:pb-0">
+              <div className="flex flex-wrap items-baseline justify-between gap-2">
+                <p className="text-[15px] font-semibold">
+                  {role.role} — {role.company}
+                </p>
+                <span className="font-mono text-xs text-muted">{role.period}</span>
+              </div>
+              <p className="text-sm text-muted">{role.note}</p>
+            </li>
+          ))}
+        </ul>
       </div>
     </section>
   );
