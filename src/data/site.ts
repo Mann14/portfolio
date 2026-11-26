@@ -6,7 +6,7 @@ export const site = {
   email: "mannmittal622@gmail.com",
   linkedin: "https://linkedin.com/in/mann-mittal-b11148243",
   github: "https://github.com/Mann14",
-  resume: "/portfolio/Mann_Mittal_DevOps.pdf",
+  resume: "/portfolio/Mann_Mittal_Resume_v6.pdf",
   availability: "Open to DevOps & Site-Reliability roles",
   headline:
     "I ship reliable cloud platforms — Terraform, Kubernetes, and GitOps that keep production up while teams move fast.",
