@@ -1,13 +1,13 @@
 export const site = {
   name: "Mann Mittal",
   role: "DevOps Engineer",
-  location: "Bhopal, India",
+  location: "Indore, India",
   phone: "+91 7489715507",
-  email: "workwithmann14@gmail.com",
+  email: "mannmittal622@gmail.com",
   linkedin: "https://linkedin.com/in/mann-mittal-b11148243",
   github: "https://github.com/Mann14",
   resume: "/portfolio/Mann_Mittal_DevOps.pdf",
-  availability: "Open to DevOps & platform engineering roles",
+  availability: "Open to DevOps & Site-Reliability roles",
   headline:
     "I ship reliable cloud platforms — Terraform, Kubernetes, and GitOps that keep production up while teams move fast.",
   summary:
@@ -15,9 +15,9 @@ export const site = {
 };
 
 export const stats = [
-  { value: "2+", label: "Years shipping infra" },
+  { value: "3+", label: "Years shipping infra" },
   { value: "0", label: "Downtime release goal" },
-  { value: "2", label: "Clouds: AWS + GCP" },
+  { value: "3", label: "Clouds: AWS + GCP" },
   { value: "Full", label: "Stack ownership" },
 ];
 
@@ -74,7 +74,7 @@ export const experience = {
   company: "ReventLabs",
   location: "Indore, India",
   role: "DevOps Engineer",
-  period: "Jan 2025 – Present",
+  period: "Jan 2024 – Present",
   mode: "Full-time",
   bullets: [
     "Manage deployment and operations of a conversational AI platform on AWS across Kubernetes clusters and Docker Swarm workloads running on EC2.",
@@ -90,15 +90,15 @@ export const earlierRoles = [
   {
     company: "8Bit Warrior",
     location: "Bhopal, Madhya Pradesh",
-    role: "Software Engineer Intern",
-    period: "Aug 2024 – Dec 2024",
+    role: "Software Engineer",
+    period: "Aug 2023 – Dec 2023",
     note: "DevOps & cloud engineering — maintained GitHub Actions CI/CD pipelines, containerized apps with Docker, and automated tasks with Linux, Git, AWS, and Bash.",
   },
   {
     company: "Brand Smashers Pvt. Ltd.",
     location: "Bhopal, Madhya Pradesh",
     role: "Software Developer Intern",
-    period: "May 2024 – Jul 2024",
+    period: "May 2023 – Jul 2023",
     note: "Software development & AI — shipped Python, C++, JavaScript, React, and Next.js code, documented processes, and worked on AI model training and prompt engineering.",
   },
 ];
@@ -108,7 +108,7 @@ export const caseStudies = [
     id: "conversational-ai",
     kicker: "ReventLabs · Production platform",
     title: "Conversational AI application",
-    period: "Jan 2025 – Present",
+    period: "Jul 2025 – Present",
     outcome: "Kubernetes + Docker Swarm on EC2, with Ansible and ArgoCD canary releases.",
     tech: [
       "Terraform",
@@ -132,7 +132,7 @@ export const caseStudies = [
     id: "ai-platform",
     kicker: "ReventLabs · Reliability & cost",
     title: "AI platform enhancement",
-    period: "Jan 2025 – Present",
+    period: "Jan 2024 – Jul 2025",
     outcome: "GitOps + blue-green rollouts, PDBs, and Terraform on GCP.",
     tech: [
       "Terraform",
@@ -177,7 +177,7 @@ export const education = {
 };
 
 export const certifications = [
-  "AWS Academy Cloud Foundations — AWS Academy (Apr 2024 – May 2024)",
+  "AWS Solution Architect - Associate (Nov 2026)",
 ];
 
 export const achievements = [
