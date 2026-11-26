@@ -17,7 +17,7 @@ export const site = {
 export const stats = [
   { value: "3+", label: "Years shipping infra" },
   { value: "0", label: "Downtime release goal" },
-  { value: "3", label: "Clouds: AWS + GCP" },
+  { value: "2", label: "Clouds: AWS + GCP" },
   { value: "Full", label: "Stack ownership" },
 ];
 
